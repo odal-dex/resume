@@ -8,80 +8,108 @@
     <meta name="keywords" content="Alex, cv, Resume">
     <meta name="description" content="Это сайт резюме Алексея">
     <title>Alex Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="contener">
+        <div class="info">
+            <img class="avatar" src="photo.jpg" alt="Моё фото">
+            <div class="info-text">
+                <h1>Алексей Алёха</h1>
 
-    <img src="/photo.jpg" alt="Моё фото" width="200px">
+                <p>Я не являюсь основателем <strong>yotube канала</strong> и онлайн школы по програмированию
+                    <strong>Result
+                        School</strong>
+                </p>
 
-    <h1>Алексей Алёха</h1>
+                <p>Я люблю<em> путешествовать, заниматься спортом и програмировать</em></p>
+                <h4>Список социальных сетей</h4>
+                <a href="https://t.me/Alexey_FrontEnder" target="_blank">Телеграм</a>
+                |
+                <a href="mailto:odal-dex@mail.ru" target="_blank">Почта</a>
 
-    <p>Я не являюсь основателем <strong>yotube канала</strong> и онлайн школы по програмированию <strong>Result
-            School</strong></p>
-
-    <p>Я люблю<em> путешествовать, заниматься спортом и програмировать</em></p>
-    <h4>Список социальных сетей</h4>
-    <a href="https://t.me/Alexey_FrontEnder" target="_blank">Телеграм</a>
-    |
-    <a href="mailto:odal-dex@mail.ru" target="_blank">Почта</a>
-
-    <h2>Мои хобби</h2>
-
-    <ol>
-        <li>Путешествия</li>
-        <li>Спорт</li>
-        <li>Горный веловипед</li>
-        <li>Програмирование</li>
-    </ol>
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ИП Великанов</td>
-                <td>Водитель фронтального погрузчика</td>
-                <td>2009-2011</td>
-            </tr>
-            <tr>
-                <td>ИП Вайшула</td>
-                <td>Электромонтажник</td>
-                <td>2011-2017</td>
-            </tr>
-            <tr>
-                <td>КамстройКонтракт</td>
-                <td>Ген.Директор</td>
-                <td>2017-2021</td>
-            </tr>
-        </tbody>
-
-    </table>
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card-1">
+            <h2>Мои хобби</h2>
+
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Спорт</li>
+                <li>Горный веловипед</li>
+                <li>Програмирование</li>
+            </ol>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение...">
+        <div class="card-2">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ИП Великанов</td>
+                        <td>Водитель фронтального погрузчика</td>
+                        <td>2009-2011</td>
+                    </tr>
+                    <tr>
+                        <td>ИП Вайшула</td>
+                        <td>Электромонтажник</td>
+                        <td>2011-2017</td>
+                    </tr>
+                    <tr>
+                        <td>КамстройКонтракт</td>
+                        <td>Ген.Директор</td>
+                        <td>2017-2021</td>
+                    </tr>
+                </tbody>
+
+            </table>
         </div>
-        <input type="submit" value="Отправить!">
-    </form>
+
+        <div class="card-3">
+            <h2>Мои курсы</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="#">Полксение профессии frontend Разработчика</a>
+                </li>
+                <li>
+                    <a href="#">Все курсы</a>
+                </li>
+            </ul>
+        </div>
 
 
+
+
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <input class="btn" type="submit" value="Отправить!">
+        </form>
+
+    </div>
 </body>
 
 </html>
